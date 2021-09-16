@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./imagens/fundo_espaco.jpg);
+    background-size: cover;
+}
+
+.planeta {
+    width: 256px;
+    height: 256px;
+    border-radius: 50%;
+    background-image: url(./imagens/textura-planeta.jfif);
+    background-size: cover;
+    box-shadow: -30px -30px 40px black inset, 15px 15px 105px inset white, 0px 0px 20px rgb(255, 201, 129);
+    animation: rotate 15s linear infinite;
+}
+@keyframes rotate {
+    0%{background-position: 0 0}
+    100%{background-position: -512px 0}
+}
